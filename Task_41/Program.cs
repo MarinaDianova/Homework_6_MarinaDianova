@@ -17,7 +17,7 @@ int CountLessThanZero(int[] array)
 
 metka:
 System.Console.WriteLine("Введите несколько чисел: ");
-int[] myArray = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int[] myArray = Array.ConvertAll(Console.ReadLine()!.Split(), int.Parse);
 if (myArray.Length == 1)
 {
     System.Console.WriteLine("Вы ввели одно число!");
